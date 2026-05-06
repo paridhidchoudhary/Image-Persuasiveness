@@ -1,0 +1,17 @@
+{
+  "pred_score_stats": {
+    "min": 0.4140625,
+    "max": 0.91796875,
+    "mean": 0.6940027573529411,
+    "std": 0.10706738310158445
+  },
+  "pearson_r_pred_vs_gt_norm": 0.26365348531254257,
+  "pearson_p": 0.0005128918245474165,
+  "pairwise": {
+    "total": 124,
+    "concordant": 97,
+    "discordant": 26,
+    "tied": 1,
+    "concordance_rate": 0.782258064516129
+  }
+}

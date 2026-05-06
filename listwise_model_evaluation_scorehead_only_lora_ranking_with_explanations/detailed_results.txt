@@ -1,0 +1,1240 @@
+DETAILED EVALUATION RESULTS (with explanations)
+==================================================
+
+Sample 1: handbag/group_eca34c67
+  Skipping — all GT scores tied
+
+Sample 2: toaster/group_ae5c79b2
+  GT scores:  [85, 80]
+  GT ranking: [0, 1]
+  FT scores:  [0.7383, 0.7266]
+  FT ranking: [0, 1]
+  Explanation saved to: toaster_group_ae5c79b2_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:**  
+The toaster is placed centrally on a kitchen countertop with wooden cabinets in the background. The toaster has a white body with black accents and appears t...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=6692.1576 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 3: handbag/group_f2040929
+  GT scores:  [70, 65, 60, 55]
+  GT ranking: [0, 1, 2, 3]
+  FT scores:  [0.8945, 0.918, 0.8672, 0.8633]
+  FT ranking: [1, 0, 2, 3]
+  Explanation saved to: handbag_group_f2040929_explanation.txt
+  Explanation preview: **Image 1:** This image showcases a collection of handbags displayed on white shelves against a clean background. The arrangement is neat but lacks depth and variety compared to other images.
+
+**Image...
+  FT vs GT | agreement=0.5000 top_acc=0 kendall=0.6667 spearman=0.8000 mse=3827.3866 nrl=0.3536
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.2500 top_acc=1 kendall=0.1826 spearman=0.1054
+  pixtral_fewshot vs GT | agreement=0.2500 top_acc=1 kendall=0.2357 spearman=0.2582
+
+------------------------------------------------------------
+
+Sample 4: refrigerator/group_572754
+  GT scores:  [40, 45]
+  GT ranking: [1, 0]
+  FT scores:  [0.5625, 0.6094]
+  FT ranking: [1, 0]
+  Explanation saved to: refrigerator_group_572754_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:** This image shows a microwave with a balloon inside that has a happy face drawn on it. The background includes some kitchen items like grapes and what appears t...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=1762.9220 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 5: microwave/group_414948
+  GT scores:  [75, 85]
+  GT ranking: [1, 0]
+  FT scores:  [0.7695, 0.8438]
+  FT ranking: [1, 0]
+  Explanation saved to: microwave_group_414948_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This image shows a kitchen setup with a microwave placed below wooden cabinets. The microwave is partially visible, and there's a stove with two pots on...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=6296.2185 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 6: suitcase/group_000000018862
+  GT scores:  [0, 20, 0, 85]
+  GT ranking: [2, 1, 2, 0]
+  FT scores:  [0.5273, 0.6523, 0.6328, 0.625]
+  FT ranking: [3, 0, 1, 2]
+  Explanation saved to: suitcase_group_000000018862_explanation.txt
+  Explanation preview: ### Visual Descriptions and Persuasion Analysis:
+
+**Image 1:** This image shows a toy-like cart with wheels, containing small plastic containers filled with red objects resembling cherries. The setup ...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=0.1826 spearman=0.2108 mse=1873.5377 nrl=0.6614
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 7: chair/group_79619
+  Skipping — all GT scores tied
+
+Sample 8: refrigerator/group_4837ae80
+  GT scores:  [90, 85]
+  GT ranking: [0, 1]
+  FT scores:  [0.8828, 0.8008]
+  FT ranking: [0, 1]
+  Explanation saved to: refrigerator_group_4837ae80_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasion Analysis
+**Description:** The first image showcases a modern kitchen setup with a black refrigerator positioned next to a stainless steel stove. The kitchen has wo...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=7515.6908 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 9: tv/group_533942
+  GT scores:  [60, 40]
+  GT ranking: [0, 1]
+  FT scores:  [0.5898, 0.4863]
+  FT ranking: [0, 1]
+  Explanation saved to: tv_group_533942_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasiveness
+The first image shows an individual sitting outdoors at what appears to be a bus stop, using a laptop placed on their lap. The person is wearing casual clothin...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=2545.4485 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 10: tv/group_303116
+  GT scores:  [80, 85]
+  GT ranking: [1, 0]
+  FT scores:  [0.625, 0.6758]
+  FT ranking: [1, 0]
+  Explanation saved to: tv_group_303116_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:**  
+A dog is sitting calmly next to a television that displays an image of a bird's nest. The room appears cozy with wooden flooring, a patterned rug, and some h...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=6705.4822 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 11: remote/group_187427
+  GT scores:  [75, 78]
+  GT ranking: [1, 0]
+  FT scores:  [0.7109, 0.7773]
+  FT ranking: [1, 0]
+  Explanation saved to: remote_group_187427_explanation.txt
+  Explanation preview: ### Visual Description and Persuasion Analysis:
+
+**Image 1:**
+A young boy is holding what appears to be a Wii remote. He's standing indoors with a casual background that includes furniture like chairs...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5741.1017 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 12: couch/group_144228
+  GT scores:  [30, 75]
+  GT ranking: [1, 0]
+  FT scores:  [0.707, 0.793]
+  FT ranking: [1, 0]
+  Explanation saved to: couch_group_144228_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasiveness
+In this image, two children are seated on what appears to be a massage chair with headphones on. The setting is indoors, likely a home environment, given the v...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3182.3808 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 13: remote/group_432727
+  GT scores:  [65, 70, 55]
+  GT ranking: [1, 0, 2]
+  FT scores:  [0.7266, 0.75, 0.6875]
+  FT ranking: [1, 0, 2]
+  Explanation saved to: remote_group_432727_explanation.txt
+  Explanation preview: ### Visual Descriptions and Persuasion Analysis:
+
+**Image 1:**  
+A young boy wearing an orange sweater is holding what appears to be a blue remote control. The background shows other people seated and...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3958.8283 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.3333 top_acc=0 kendall=0.3333 spearman=0.5000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-0.3333 spearman=-0.5000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000
+
+------------------------------------------------------------
+
+Sample 14: refrigerator/group_87126
+  GT scores:  [90, 85]
+  GT ranking: [0, 1]
+  FT scores:  [0.8594, 0.8672]
+  FT ranking: [1, 0]
+  Explanation saved to: refrigerator_group_87126_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This kitchen features a modern design with white cabinetry, a wooden island countertop, and dark wood flooring. The refrigerator is black and positioned...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000 mse=7512.1906 nrl=0.7071
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 15: remote/group_242665
+  GT scores:  [75, 85]
+  GT ranking: [1, 0]
+  FT scores:  [0.625, 0.8281]
+  FT ranking: [1, 0]
+  Explanation saved to: remote_group_242665_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasion Analysis
+The first image shows a stack of books with a remote control partially visible at the bottom right corner. The books appear to be arranged haphazardly ato...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=6308.2726 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 16: refrigerator/group_469779
+  GT scores:  [70, 65, 75]
+  GT ranking: [1, 2, 0]
+  FT scores:  [0.5703, 0.6367, 0.6797]
+  FT ranking: [2, 1, 0]
+  Explanation saved to: refrigerator_group_469779_explanation.txt
+  Explanation preview: ### Image 1:
+**Visual Description:** This image shows an individual using a vacuum cleaner inside a refrigerator. The person is wearing a dark blue apron and appears to be cleaning the interior of the...
+  FT vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000 mse=4828.8741 nrl=0.4714
+  qwen_zeroshot vs GT | agreement=0.3333 top_acc=0 kendall=0.3333 spearman=0.5000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 17: microwave/group_a2db95d7
+  Skipping — could not extract GT scores
+
+Sample 18: backpack/group_231632
+  GT scores:  [70, 50, 80]
+  GT ranking: [1, 2, 0]
+  FT scores:  [0.75, 0.7344, 0.793]
+  FT ranking: [1, 2, 0]
+  Explanation saved to: backpack_group_231632_explanation.txt
+  Explanation preview: ### Image Descriptions and Persuasion Analysis:
+
+**Image 1:** This image shows an interior space with wooden stairs leading up to another level. There is a red backpack placed near the bottom of the s...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=4498.8060 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.6667 top_acc=1 kendall=0.8165 spearman=0.8660
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 19: couch/group_441523
+  GT scores:  [70, 75, 80]
+  GT ranking: [2, 1, 0]
+  FT scores:  [0.5742, 0.6289, 0.625]
+  FT ranking: [2, 0, 1]
+  Explanation saved to: couch_group_441523_explanation.txt
+  Explanation preview: ### Image Descriptions and Persuasion Analysis:
+
+**Image 1:** This image shows an interior of a van with a cat sitting on a patterned couch. The couch appears comfortable but is partially obscured by ...
+  FT vs GT | agreement=0.3333 top_acc=0 kendall=0.3333 spearman=0.5000 mse=5550.4631 nrl=0.4714
+  qwen_fewshot vs GT | agreement=0.6667 top_acc=1 kendall=0.8165 spearman=0.8660
+  pixtral_zeroshot vs GT | agreement=0.3333 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 20: backpack/group_266866
+  GT scores:  [60, 65]
+  GT ranking: [1, 0]
+  FT scores:  [0.6133, 0.625]
+  FT ranking: [1, 0]
+  Explanation saved to: backpack_group_266866_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** The photo shows a person crossing a street with a green umbrella. They appear to be wearing a backpack that is partially visible over their shoulder. Th...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3835.4615 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 21: refrigerator/group_d06c982b
+  GT scores:  [85, 90]
+  GT ranking: [1, 0]
+  FT scores:  [0.7812, 0.8047]
+  FT ranking: [1, 0]
+  Explanation saved to: refrigerator_group_d06c982b_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This image shows a modern kitchen with a white refrigerator on the left side. The countertop is clean and uncluttered, featuring a red bowl filled with ...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=7524.3008 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 22: chair/group_f188573c
+  GT scores:  [88, 85, 83, 80]
+  GT ranking: [0, 1, 2, 3]
+  FT scores:  [0.7461, 0.7461, 0.7188, 0.7578]
+  FT ranking: [1, 1, 3, 0]
+  Explanation saved to: chair_group_f188573c_explanation.txt
+  Explanation preview: ### Visual Descriptions and Persuasion Analysis:
+
+**Image 1:** This image showcases a collection of chairs arranged neatly against a light blue wall. The variety of colors—red, black, white, brown, an...
+  FT vs GT | agreement=0.2500 top_acc=0 kendall=-0.1826 spearman=-0.3162 mse=6940.3733 nrl=0.8292
+  qwen_zeroshot vs GT | agreement=0.5000 top_acc=1 kendall=0.7071 spearman=0.7746
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 23: refrigerator/group_139921
+  GT scores:  [55, 85, 50]
+  GT ranking: [1, 0, 2]
+  FT scores:  [0.5391, 0.8008, 0.5625]
+  FT ranking: [2, 0, 1]
+  Explanation saved to: refrigerator_group_139921_explanation.txt
+  Explanation preview: ### Visual Descriptions and Persuasion Analysis:
+
+**Image 1:** This black-and-white photo shows a person reaching into an open refrigerator, with the light from inside creating a silhouette effect. Th...
+  FT vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000 mse=4166.5229 nrl=0.4714
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-0.3333 spearman=-0.5000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 24: remote/group_457687
+  GT scores:  [90, 85]
+  GT ranking: [0, 1]
+  FT scores:  [0.8477, 0.8281]
+  FT ranking: [0, 1]
+  Explanation saved to: remote_group_457687_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This image shows two drones flying against a clear blue sky. The drones appear to be small with four propellers each, designed for remote control operat...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=7516.5225 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 25: handbag/group_352549
+  GT scores:  [60, 85]
+  GT ranking: [1, 0]
+  FT scores:  [0.6133, 0.8125]
+  FT ranking: [1, 0]
+  Explanation saved to: handbag_group_352549_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasion Analysis
+The first image shows a small black kitten nestled inside a woven basket lined with a plaid fabric. The basket appears to be placed atop a patterned blank...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5307.1588 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 26: tv/group_249538
+  GT scores:  [75, 80]
+  GT ranking: [1, 0]
+  FT scores:  [0.7812, 0.8047]
+  FT ranking: [1, 0]
+  Explanation saved to: tv_group_249538_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasion Analysis
+**Description:** The first image shows a person sitting on a chair facing a TV placed on a yellow stand. The TV is displaying some content, but the screen...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5890.1602 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 27: backpack/group_9e71b06a
+  GT scores:  [55, 70]
+  GT ranking: [1, 0]
+  FT scores:  [0.6719, 0.7891]
+  FT ranking: [1, 0]
+  Explanation saved to: backpack_group_9e71b06a_explanation.txt
+  Explanation preview: ### Visual Description and Persuasion Analysis:
+
+**Image 1:**
+A child is lying on grass near a body of water with a blue backpack placed behind them. The focus seems to be on the backpack, but the bac...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3870.8495 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 28: backpack/group_ee66a0ab
+  GT scores:  [80, 75]
+  GT ranking: [0, 1]
+  FT scores:  [0.8789, 0.875]
+  FT ranking: [0, 1]
+  Explanation saved to: backpack_group_ee66a0ab_explanation.txt
+  Explanation preview: ### Visual Description and Persuasion Analysis:
+
+**Image 1:**
+The image features a bright pink backpack placed prominently behind an open laptop with a scenic wallpaper of mountains and water. The bac...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5877.3316 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 29: backpack/group_7bec740c
+  GT scores:  [75, 65]
+  GT ranking: [0, 1]
+  FT scores:  [0.7852, 0.7617]
+  FT ranking: [0, 1]
+  Explanation saved to: backpack_group_7bec740c_explanation.txt
+  Explanation preview: ### Visual Description and Persuasion Analysis:
+
+**Image 1:**  
+This image shows a backpack placed neatly beside a bed with a laptop partially visible underneath. The lighting is warm, creating a cozy...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=4817.1999 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 30: chair/group_327623
+  Skipping — all GT scores tied
+
+Sample 31: couch/group_130163
+  GT scores:  [85, 90]
+  GT ranking: [1, 0]
+  FT scores:  [0.8086, 0.8984]
+  FT ranking: [1, 0]
+  Explanation saved to: couch_group_130163_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:** This image shows a living room with a light-colored couch adorned with green throw pillows. The room features a bookshelf filled with books and decorative item...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=7513.6407 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 32: tv/group_249968
+  GT scores:  [20, 30, 40]
+  GT ranking: [2, 1, 0]
+  FT scores:  [0.4805, 0.5039, 0.5938]
+  FT ranking: [2, 1, 0]
+  Explanation saved to: tv_group_249968_explanation.txt
+  Explanation preview: ### Image Descriptions and Persuasion Analysis:
+
+**Image 1:** This image shows an old television set placed against a wall with a small orange bench-like structure on top of it. The TV appears worn ou...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=934.6281 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.3333 top_acc=0 kendall=0.0000 spearman=0.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=0.0000 spearman=0.0000
+
+------------------------------------------------------------
+
+Sample 33: cell phone/group_544698
+  GT scores:  [40, 55, 45]
+  GT ranking: [2, 0, 1]
+  FT scores:  [0.668, 0.7305, 0.625]
+  FT ranking: [1, 0, 2]
+  Explanation saved to: cell phone_group_544698_explanation.txt
+  Explanation preview: ### Image Descriptions and Persuasion Analysis:
+
+**Image 1:**  
+A dog is lying on a couch next to a cell phone and some other electronic devices. The background includes a "TOYS" box and floral-patter...
+  FT vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000 mse=2153.7771 nrl=0.4714
+  qwen_fewshot vs GT | agreement=0.6667 top_acc=1 kendall=0.8165 spearman=0.8660
+  pixtral_zeroshot vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 34: laptop/group_000000158582
+  GT scores:  [20, 0, 50]
+  GT ranking: [1, 2, 0]
+  FT scores:  [0.7461, 0.6562, 0.6914]
+  FT ranking: [0, 2, 1]
+  Explanation saved to: laptop_group_000000158582_explanation.txt
+  Explanation preview: ### Visual Descriptions and Persuasion Analysis:
+
+**Image 1:** The individual is holding what appears to be a smartphone rather than a laptop. This image does not effectively showcase a laptop, making...
+  FT vs GT | agreement=0.3333 top_acc=0 kendall=0.3333 spearman=0.5000 mse=934.1603 nrl=0.4714
+
+------------------------------------------------------------
+
+Sample 35: couch/group_373476
+  GT scores:  [60, 40, 65]
+  GT ranking: [1, 2, 0]
+  FT scores:  [0.6289, 0.6211, 0.707]
+  FT ranking: [1, 2, 0]
+  Explanation saved to: couch_group_373476_explanation.txt
+  Explanation preview: ### Image Descriptions and Persuasion Analysis:
+
+**Image 1:** This image shows two individuals seated at desks with computers. The setting appears to be an office or study room environment. There is n...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3069.7370 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000
+  qwen_fewshot vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 36: handbag/group_4e7d5270
+  GT scores:  [50, 70]
+  GT ranking: [1, 0]
+  FT scores:  [0.7773, 0.8125]
+  FT ranking: [1, 0]
+  Explanation saved to: handbag_group_4e7d5270_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** The first image shows a small handbag placed on a flat surface with a plain background. The bag is dark blue with gold hardware, positioned near an open...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3604.8900 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 37: toaster/group_419449
+  GT scores:  [40, 75]
+  GT ranking: [1, 0]
+  FT scores:  [0.4648, 0.5625]
+  FT ranking: [1, 0]
+  Explanation saved to: toaster_group_419449_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This image shows a white electric kettle placed against a wall with graffiti art. The background includes a drawing of a cup with steam rising from it, ...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3551.9850 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 38: remote/group_526933
+  GT scores:  [85, 80]
+  GT ranking: [0, 1]
+  FT scores:  [0.7188, 0.7617]
+  FT ranking: [1, 0]
+  Explanation saved to: remote_group_526933_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasion Analysis
+A young girl is seated comfortably with a remote control in her hand, wearing oversized glasses that add a playful element to the scene. The background su...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000 mse=6691.0172 nrl=0.7071
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 39: remote/group_110951
+  GT scores:  [75, 85]
+  GT ranking: [1, 0]
+  FT scores:  [0.6875, 0.8086]
+  FT ranking: [1, 0]
+  Explanation saved to: remote_group_110951_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+A smartphone is placed on a dashboard with a scenic sunset view through the windshield. The phone screen is illuminated, suggesting it might be displa...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=6305.2703 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 40: couch/group_314188
+  GT scores:  [35, 40]
+  GT ranking: [1, 0]
+  FT scores:  [0.457, 0.5742]
+  FT ranking: [1, 0]
+  Explanation saved to: couch_group_314188_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:**  
+A black dog is lying on what appears to be a couch with a remote control placed next to its paw. The background includes a blue blanket and part of a red pil...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=1373.8045 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 41: cell phone/group_238009
+  GT scores:  [60, 70]
+  GT ranking: [1, 0]
+  FT scores:  [0.7383, 0.6602]
+  FT ranking: [0, 1]
+  Explanation saved to: cell phone_group_238009_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasion Analysis
+**Description:** The first image shows a person wearing a white sleeveless shirt standing outdoors in what appears to be a park setting with greenery and ...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000 mse=4159.9826 nrl=0.7071
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 42: laptop/group_da8b63ab
+  GT scores:  [70, 85]
+  GT ranking: [1, 0]
+  FT scores:  [0.7227, 0.8008]
+  FT ranking: [1, 0]
+  Explanation saved to: laptop_group_da8b63ab_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:**  
+A closed laptop is placed on a desk with an open book stacked behind it. The background features a window with natural light streaming through, creating a ca...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5944.4294 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 43: suitcase/group_56646
+  GT scores:  [75, 70]
+  GT ranking: [0, 1]
+  FT scores:  [0.6914, 0.6406]
+  FT ranking: [0, 1]
+  Explanation saved to: suitcase_group_56646_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+A small white dog is sitting atop a black suitcase. The dog appears relaxed and comfortable, with its front paws resting on the suitcase's handle. The...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5166.2450 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 44: toaster/group_156175
+  GT scores:  [80, 60]
+  GT ranking: [0, 1]
+  FT scores:  [0.7031, 0.625]
+  FT ranking: [0, 1]
+  Explanation saved to: toaster_group_156175_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This image features a vibrant mural depicting a coffee shop scene with a prominent "Coffee" sign at the top. The design includes various elements like a...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=4906.6925 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 45: remote/group_36488
+  GT scores:  [70, 65]
+  GT ranking: [0, 1]
+  FT scores:  [0.7344, 0.7461]
+  FT ranking: [1, 0]
+  Explanation saved to: remote_group_36488_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** The person is holding what appears to be a Wii remote with both hands, positioned at chest level. The focus seems to be on demonstrating how the remote ...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000 mse=4463.1456 nrl=0.7071
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 46: backpack/group_829022ab
+  GT scores:  [85, 60, 85]
+  GT ranking: [0, 2, 0]
+  FT scores:  [0.8711, 0.8516, 0.8281]
+  FT ranking: [0, 1, 2]
+  Explanation saved to: backpack_group_829022ab_explanation.txt
+  Explanation preview: ### Visual Description and Persuasion Analysis:
+
+**Image 1:**  
+The first image shows five backpacks neatly arranged against a wall with a blue stripe. The lighting is bright, highlighting the bags cl...
+  FT vs GT | agreement=0.3333 top_acc=1 kendall=0.0000 spearman=0.0000 mse=5887.0384 nrl=0.7454
+  qwen_zeroshot vs GT | agreement=0.6667 top_acc=0 kendall=0.8165 spearman=0.8660
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 47: couch/group_000000125652
+  GT scores:  [65, 60]
+  GT ranking: [0, 1]
+  FT scores:  [0.6445, 0.5898]
+  FT ranking: [0, 1]
+  Explanation saved to: couch_group_000000125652_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:** The couch is upholstered with a dark gray fabric that appears slightly worn, showing some creases and minor stains. It has a simple design with vertical lines ...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3835.5965 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 48: microwave/group_28039142
+  GT scores:  [85, 75]
+  GT ranking: [0, 1]
+  FT scores:  [0.8906, 0.8984]
+  FT ranking: [1, 0]
+  Explanation saved to: microwave_group_28039142_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This image showcases a modern kitchen setup with a built-in microwave installed above a countertop. The microwave is sleek, stainless steel, and seamles...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000 mse=6282.7143 nrl=0.7071
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 49: tv/group_000000128166
+  GT scores:  [20, 25, 30, 35]
+  GT ranking: [3, 2, 1, 0]
+  FT scores:  [0.6719, 0.5586, 0.6797, 0.6172]
+  FT ranking: [1, 3, 0, 2]
+  Explanation saved to: tv_group_000000128166_explanation.txt
+  Explanation preview: ### Visual Descriptions and Persuasion Analysis:
+
+**Image 1:** This image shows a teddy bear sitting atop a wooden cabinet. The background includes an open doorway leading into another room with visib...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=0.0000 spearman=0.0000 mse=753.2043 nrl=0.7906
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 50: chair/group_434857
+  Skipping — all GT scores tied
+
+Sample 51: couch/group_3d64d7f0
+  GT scores:  [45, 40]
+  GT ranking: [0, 1]
+  FT scores:  [0.7266, 0.707]
+  FT ranking: [0, 1]
+  Explanation saved to: couch_group_3d64d7f0_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:**  
+This image shows a minimalist living space with a black cat sitting on a wooden shelf above a window covered by light-colored curtains. The room has a clean,...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=1752.0373 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 52: cell phone/group_229724
+  GT scores:  [65, 35]
+  GT ranking: [0, 1]
+  FT scores:  [0.8281, 0.7578]
+  FT ranking: [0, 1]
+  Explanation saved to: cell phone_group_229724_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasion Analysis
+The first image features a woman holding a smartphone with a sleek design. She is dressed elegantly, wearing a silver dress that complements her red lipst...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=2645.2785 nrl=0.0000
+
+------------------------------------------------------------
+
+Sample 53: chair/group_211347
+  GT scores:  [25, 30]
+  GT ranking: [1, 0]
+  FT scores:  [0.4785, 0.5469]
+  FT ranking: [1, 0]
+  Explanation saved to: chair_group_211347_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+A white cat is lying on what appears to be a chair with a dark cushioned seat. The background includes part of a person's arm resting on the backrest,...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=734.3949 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.5000 top_acc=0 kendall=0.0000 spearman=0.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 54: microwave/group_000000229787
+  GT scores:  [30, 40, 60, 85]
+  GT ranking: [3, 2, 1, 0]
+  FT scores:  [0.6016, 0.543, 0.6055, 0.7227]
+  FT ranking: [2, 3, 1, 0]
+  Explanation saved to: microwave_group_000000229787_explanation.txt
+  Explanation preview: ### Image Descriptions and Persuasion Analysis:
+
+**Image 1:** The child is seated at what appears to be a kitchen counter with various items around them, including a chandelier above. There's no clear...
+  FT vs GT | agreement=0.5000 top_acc=1 kendall=0.6667 spearman=0.8000 mse=3262.8766 nrl=0.3536
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 55: remote/group_33753
+  GT scores:  [40, 70]
+  GT ranking: [1, 0]
+  FT scores:  [0.5391, 0.6953]
+  FT ranking: [1, 0]
+  Explanation saved to: remote_group_33753_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:**  
+The first image shows an ornate metal bench with wooden slats. There is a small, blue object resembling a remote control placed on one of the slats. The back...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3180.1526 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 56: couch/group_257723
+  GT scores:  [65, 70, 60]
+  GT ranking: [1, 0, 2]
+  FT scores:  [0.6328, 0.6484, 0.6133]
+  FT ranking: [1, 0, 2]
+  Explanation saved to: couch_group_257723_explanation.txt
+  Explanation preview: ### Image Descriptions and Persuasion Analysis:
+
+**Image 1:**  
+A person is sitting on a dark blue couch with a cat lounging nearby. The room has a cozy setup with a guinea pig cage visible behind the...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=4159.8521 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-0.8165 spearman=-0.8660
+
+------------------------------------------------------------
+
+Sample 57: couch/group_70470
+  GT scores:  [70, 75]
+  GT ranking: [1, 0]
+  FT scores:  [0.7812, 0.793]
+  FT ranking: [1, 0]
+  Explanation saved to: couch_group_70470_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** The photo shows a person sitting on a couch holding what appears to be a gaming controller. The individual is wearing casual attire and seems engaged wi...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5148.9594 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 58: cell phone/group_188405
+  GT scores:  [45, 50]
+  GT ranking: [1, 0]
+  FT scores:  [0.5898, 0.6172]
+  FT ranking: [1, 0]
+  Explanation saved to: cell phone_group_188405_explanation.txt
+  Explanation preview: ### Image 1 Description:
+A woman is standing outdoors holding a water bottle in one hand and what appears to be a cell phone in the other. She has a backpack slung over her shoulder and seems to be in...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=2205.4621 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 59: refrigerator/group_40338
+  GT scores:  [75, 70]
+  GT ranking: [0, 1]
+  FT scores:  [0.6875, 0.6719]
+  FT ranking: [0, 1]
+  Explanation saved to: refrigerator_group_40338_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasiveness
+In this image, two individuals are interacting with an open refrigerator filled with fresh produce like oranges and bananas. The setting appears casual and dom...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5164.3683 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 60: laptop/group_344703
+  GT scores:  [85, 90]
+  GT ranking: [1, 0]
+  FT scores:  [0.6641, 0.6992]
+  FT ranking: [1, 0]
+  Explanation saved to: laptop_group_344703_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This image shows two tablets placed side by side with a lamp positioned between them. The lamp is turned on, casting light onto the screens. The backgro...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=7543.5899 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 61: suitcase/group_374885
+  GT scores:  [60, 70]
+  GT ranking: [1, 0]
+  FT scores:  [0.5469, 0.5977]
+  FT ranking: [1, 0]
+  Explanation saved to: suitcase_group_374885_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+A person wearing a red t-shirt stands next to a black suitcase with wheels. The background features a graffiti mural depicting a stylized face against...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=4175.6797 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 62: chair/group_bc968267
+  GT scores:  [75, 80]
+  GT ranking: [1, 0]
+  FT scores:  [0.6602, 0.6289]
+  FT ranking: [0, 1]
+  Explanation saved to: chair_group_bc968267_explanation.txt
+  Explanation preview: ### Visual Description and Persuasion Analysis:
+
+**Image 1:**  
+The chair is positioned under an outdoor structure with greenery in the background. The chair itself has a simple design with a blue sea...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000 mse=5913.0914 nrl=0.7071
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 63: tv/group_502300
+  GT scores:  [40, 60]
+  GT ranking: [1, 0]
+  FT scores:  [0.5234, 0.6328]
+  FT ranking: [1, 0]
+  Explanation saved to: tv_group_502300_explanation.txt
+  Explanation preview: **Image 1 Description:**  
+The first image shows a desk setup with two monitors placed side by side. One monitor is smaller and appears to be an older CRT model, while the other is larger and looks li...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=2541.4310 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 64: chair/group_53897
+  GT scores:  [85, 80, 82]
+  GT ranking: [0, 2, 1]
+  FT scores:  [0.7227, 0.7109, 0.7461]
+  FT ranking: [1, 2, 0]
+  Explanation saved to: chair_group_53897_explanation.txt
+  Explanation preview: ### Visual Descriptions:
+
+**Image 1:** The photo shows a young child sitting in a high chair holding a carrot. The background includes kitchen items like a coffee maker and some bottles, suggesting a ...
+  FT vs GT | agreement=0.3333 top_acc=0 kendall=0.3333 spearman=0.5000 mse=6663.8745 nrl=0.4714
+  qwen_zeroshot vs GT | agreement=0.3333 top_acc=0 kendall=0.3333 spearman=0.5000
+  qwen_fewshot vs GT | agreement=0.3333 top_acc=0 kendall=-0.8165 spearman=-0.8660
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 65: toaster/group_23444
+  GT scores:  [45, 35]
+  GT ranking: [0, 1]
+  FT scores:  [0.6719, 0.5391]
+  FT ranking: [0, 1]
+  Explanation saved to: toaster_group_23444_explanation.txt
+  Explanation preview: ### Visual Description and Persuasion Analysis:
+
+**Image 1:**  
+This image shows an open toaster oven with a piece of food inside, likely a slice of bread or a similar item, being toasted. The interio...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=1576.2694 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 66: refrigerator/group_45663
+  GT scores:  [75, 20]
+  GT ranking: [0, 1]
+  FT scores:  [0.7305, 0.5234]
+  FT ranking: [0, 1]
+  Explanation saved to: refrigerator_group_45663_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This is an open refrigerator with a vintage aesthetic. The exterior has a metallic finish with some wear, giving it a retro look. Inside, there's ample ...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=2947.6499 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 67: cell phone/group_252738
+  GT scores:  [85, 75]
+  GT ranking: [0, 1]
+  FT scores:  [0.7617, 0.6875]
+  FT ranking: [0, 1]
+  Explanation saved to: cell phone_group_252738_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+A person is standing outdoors with a vast landscape in the background featuring rolling hills under a clear sky. The individual is wearing headphones ...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=6309.2178 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 68: handbag/group_000000293027
+  GT scores:  [85, 80]
+  GT ranking: [0, 1]
+  FT scores:  [0.7305, 0.6562]
+  FT ranking: [0, 1]
+  Explanation saved to: handbag_group_000000293027_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasiveness
+The first image features a black cat lounging comfortably atop a green duffel bag with brown accents. The bag appears sturdy and well-made, suggesting durabili...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=6698.3923 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 69: chair/group_461098
+  GT scores:  [30, 25]
+  GT ranking: [0, 1]
+  FT scores:  [0.4219, 0.4141]
+  FT ranking: [0, 1]
+  Explanation saved to: chair_group_461098_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:** This image shows a gray cat lying on what appears to be a chair with a cushioned seat and backrest. The chair is partially visible, with wooden legs and...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=739.6669 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=0.5000 top_acc=1 kendall=0.0000 spearman=0.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 70: chair/group_08374ad1
+  GT scores:  [40, 60]
+  GT ranking: [1, 0]
+  FT scores:  [0.75, 0.7695]
+  FT ranking: [1, 0]
+  Explanation saved to: chair_group_08374ad1_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+The first image features a beige armchair with a cushioned seat and backrest placed outdoors amidst greenery. The chair is positioned next to a large ...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=2524.4055 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 71: suitcase/group_000000461705
+  GT scores:  [50, 55, 60]
+  GT ranking: [2, 1, 0]
+  FT scores:  [0.6641, 0.6953, 0.6133]
+  FT ranking: [1, 0, 2]
+  Explanation saved to: suitcase_group_000000461705_explanation.txt
+  Explanation preview: ### Visual Descriptions and Persuasion Analysis:
+
+**Image 1:** This image shows a motorcycle with a wooden suitcase attached to its rear seat. The suitcase is positioned prominently against the backdr...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=-0.3333 spearman=-0.5000 mse=2969.9387 nrl=0.8165
+  qwen_zeroshot vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 72: couch/group_58001
+  GT scores:  [60, 55]
+  GT ranking: [0, 1]
+  FT scores:  [0.6953, 0.6445]
+  FT ranking: [0, 1]
+  Explanation saved to: couch_group_58001_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+A ginger cat with blue eyes is lounging comfortably on what appears to be a black leather couch. The cat's relaxed posture and the presence of two rem...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=3235.7815 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 73: toaster/group_fb002f9f
+  GT scores:  [70, 80]
+  GT ranking: [1, 0]
+  FT scores:  [0.7695, 0.8164]
+  FT ranking: [1, 0]
+  Explanation saved to: toaster_group_fb002f9f_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+The toaster is placed on a white plate alongside a bowl filled with various fruits like apples, oranges, and limes. The arrangement suggests a casual ...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5531.4497 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 74: suitcase/group_485083
+  GT scores:  [50, 60]
+  GT ranking: [1, 0]
+  FT scores:  [0.668, 0.6719]
+  FT ranking: [1, 0]
+  Explanation saved to: suitcase_group_485083_explanation.txt
+  Explanation preview: ### Image 1 Description & Persuasiveness
+A gray cat is perched atop a black suitcase placed indoors. The background includes a television set, wooden furniture, and a dining area with chairs and a tab...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=2976.7379 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 75: cell phone/group_476634
+  GT scores:  [10, 70, 40]
+  GT ranking: [2, 0, 1]
+  FT scores:  [0.6289, 0.7734, 0.6367]
+  FT ranking: [2, 0, 1]
+  Explanation saved to: cell phone_group_476634_explanation.txt
+  Explanation preview: ### Image Descriptions and Persuasion Analysis:
+
+**Image 1:** This image shows a brown leather wallet placed atop a crate filled with green beans. The wallet is positioned prominently against the back...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=2143.2008 nrl=0.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=0.3333 top_acc=1 kendall=0.3333 spearman=0.5000
+  pixtral_fewshot vs GT | agreement=0.6667 top_acc=1 kendall=0.8165 spearman=0.8660
+
+------------------------------------------------------------
+
+Sample 76: backpack/group_e71dedbc
+  GT scores:  [85, 70]
+  GT ranking: [0, 1]
+  FT scores:  [0.8125, 0.7852]
+  FT ranking: [0, 1]
+  Explanation saved to: backpack_group_e71dedbc_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:** This image shows a classroom setting with desks arranged in rows. Each desk has a laptop open, and there is a backpack placed on one of the tables near the fro...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=5939.1149 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+
+Sample 77: microwave/group_532131
+  GT scores:  [60, 80]
+  GT ranking: [1, 0]
+  FT scores:  [0.7031, 0.7852]
+  FT ranking: [1, 0]
+  Explanation saved to: microwave_group_532131_explanation.txt
+  Explanation preview: ### Description of Images:
+
+**Image 1:** This kitchen features light wooden cabinets with silver handles. On the countertop, there is a red toaster, a kettle, and what appears to be a small electric k...
+  FT vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000 mse=4895.5554 nrl=0.0000
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+
+------------------------------------------------------------
+
+Sample 78: refrigerator/group_55521
+  GT scores:  [70, 75]
+  GT ranking: [1, 0]
+  FT scores:  [0.582, 0.5508]
+  FT ranking: [0, 1]
+  Explanation saved to: refrigerator_group_55521_explanation.txt
+  Explanation preview: ### Visual Description of Images:
+
+**Image 1:**  
+The first image shows an old refrigerator with a light blue exterior. It appears to be placed outdoors, possibly in a garage setting, given the presen...
+  FT vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000 mse=5180.7703 nrl=0.7071
+  qwen_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  qwen_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+  pixtral_zeroshot vs GT | agreement=1.0000 top_acc=1 kendall=1.0000 spearman=1.0000
+  pixtral_fewshot vs GT | agreement=0.0000 top_acc=0 kendall=-1.0000 spearman=-1.0000
+
+------------------------------------------------------------
+

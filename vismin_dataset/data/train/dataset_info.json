@@ -1,0 +1,35 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "image_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "image": {
+      "_type": "Image"
+    },
+    "caption": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "bounding_boxes": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "source_image_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "edit_instruction": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "category": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

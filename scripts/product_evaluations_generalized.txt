@@ -1,0 +1,7 @@
+=== PRODUCT IMAGE EVALUATIONS (GENERALIZED) ===
+Extracted:
+
+
+=== SUMMARY ===
+Processed: 0 valid entries
+Skipped: 706 entries

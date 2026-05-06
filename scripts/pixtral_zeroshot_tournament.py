@@ -1,0 +1,780 @@
+import os
+import json
+import base64
+import numpy as np
+from PIL import Image
+from tqdm import tqdm
+import gc
+import time
+from mistralai import Mistral
+from sklearn.model_selection import train_test_split
+import random 
+import torch 
+
+## SET PATHS
+data_root = "/home/debajyoti/paridhi_mtp/MTP-2-persuasion (Datasets, Results, PPTs)/MTP-2-persuasion/dataset"
+#data_root = "/home/deepg/NAS/Downloads/MTP-2-persuasion/dataset"
+dataset_image = os.path.join(data_root, "dataset_image")
+dataset_response = os.path.join(data_root, "final_data")
+metrics_output_dir = os.path.join(data_root, "dataset_response_for_tournament")
+debug_output_dir = os.path.join(data_root, "tournament_detailed_logs_pixtral")
+os.makedirs(metrics_output_dir, exist_ok=True)
+os.makedirs(debug_output_dir, exist_ok=True)
+
+SEED = 50
+random.seed(SEED)
+np.random.seed(SEED)
+if torch.cuda.is_available():
+    torch.manual_seed(SEED)
+    torch.cuda.manual_seed_all(SEED)
+
+# Initialize Mistral/Pixtral API
+API_KEY = "MgFASHu9FVkLBk2QRPqTL70trCY0QqoZ"
+MODEL_NAME = "pixtral-large-latest"
+client = Mistral(api_key=API_KEY)
+
+print(f"Initialized Pixtral client!")
+
+# Import extract_text_data from MTP_new_preprocess module
+# This is needed to extract information from model outputs
+try:
+    from simple_data_preprocess import extract_text_data
+except ImportError:
+    # Provide a simplified version if the module is not available
+    print("Warning: MTP_new_preprocess module not found. Using simplified extract_text_data function.")
+    
+    def extract_text_data(file_path):
+        """Simplified version to extract scores from model outputs"""
+        import re
+        
+        with open(file_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        
+        # Extract scores using regex patterns
+        extracted_info = []
+        ranking_text = ""
+        
+        # Look for image sections with persuasion scores
+        score_pattern = r'(?:Image\s+(\d+)|^(\d+)\.\s+Image\s+(\d+)).*?(?:Persuasion\s+Score|Score):\s*(\d+)'
+        matches = re.finditer(score_pattern, content, re.MULTILINE | re.DOTALL)
+        
+        for match in matches:
+            # Get image number
+            img_num = None
+            for group_idx in [1, 3]:  # Check the capturing groups for image number
+                if match.group(group_idx) and match.group(group_idx).isdigit():
+                    img_num = int(match.group(group_idx))
+                    break
+            
+            if img_num is None:
+                continue
+                
+            # Get score
+            score = int(match.group(4)) if match.group(4) and match.group(4).isdigit() else None
+            
+            # Add to extracted info
+            extracted_info.append({
+                "image_num": img_num,
+                "score": score,
+                "full_text": match.group(0)
+            })
+        
+        # Look for ranking section
+        ranking_match = re.search(r'(?:Ranking|Overall\s+Ranking):(.*?)(?=\n\n|\Z)', content, re.DOTALL)
+        if ranking_match:
+            ranking_text = ranking_match.group(1).strip()
+        
+        # Sort by image number
+        extracted_info.sort(key=lambda x: x["image_num"])
+        
+        return extracted_info, ranking_text
+
+def encode_image(image_path):
+    """Encodes an image as a base64 string."""
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
+
+def get_model_ranking(client, images, category, round_name="", debug_info=None):
+    """Get Pixtral model prediction for a set of images with detailed debugging."""
+    # Initialize round info for the debug log
+    round_info = {
+        "round_name": round_name,
+        "images_compared": [os.path.basename(img) for img in images],
+        "images_indices": list(range(len(images))),  # 0-indexed positions in this specific comparison
+        "status": "processing",
+        "error": None
+    }
+    
+    if debug_info is not None:
+        debug_info["rounds"].append(round_info)
+    
+    try:
+        # Create encoded images for Pixtral API
+        encoded_images = []
+        for img_path in images:
+            try:
+                encoded_images.append({
+                    "type": "image_url", 
+                    "image_url": {"url": f"data:image/jpeg;base64,{encode_image(img_path)}"}
+                })
+            except Exception as e:
+                error_msg = f"Error encoding image {img_path}: {str(e)}"
+                print(f"{error_msg}")
+                if debug_info is not None:
+                    round_info["status"] = "failed"
+                    round_info["error"] = error_msg
+                return None
+        
+        # Create user prompt
+        prompt_text = (
+            f"You are evaluating images in the '{category}' product category. "
+            f"Rank the images, based on their appeal for selling this '{category}' product. "
+            f"Provide description, and **persuasion score (1-100)** for each image and explain the ranking."
+        )
+        
+        # Create full content array
+        content = [{"type": "text", "text": prompt_text}] + encoded_images
+        
+        # Create messages for API call
+        messages = [{"role": "user", "content": content}]
+
+        # Add retry mechanism with exponential backoff
+        max_retries = 3
+        retry_delay = 2
+        
+        for attempt in range(max_retries):
+            try:
+                # Call Pixtral API
+                response = client.chat.complete(
+                    model=MODEL_NAME,
+                    messages=messages,
+                    max_tokens=1024,
+                    temperature=0
+                )
+                
+                # Extract output text
+                generated_text = response.choices[0].message.content
+                
+                # Create temporary file for extract_text_data
+                temp_dir = os.path.join(debug_output_dir, "temp")
+                os.makedirs(temp_dir, exist_ok=True)
+                temp_response_file = os.path.join(temp_dir, f"temp_response_{category}_{round_name}.txt")
+                with open(temp_response_file, "w", encoding="utf-8") as f:
+                    f.write(generated_text)
+                
+                # Extract information using extract_text_data function
+                extracted_info, ranking = extract_text_data(temp_response_file)
+                
+                # If extraction failed, return None
+                if not extracted_info:
+                    error_msg = f"Failed to extract information from model response for {category} ({round_name})"
+                    print(f"{error_msg}")
+                    if debug_info is not None:
+                        round_info["status"] = "failed"
+                        round_info["error"] = error_msg
+                    return None
+                
+                # Process scores and determine ranking
+                scores = []
+                for i, info in enumerate(extracted_info):
+                    if "score" in info and info["score"] is not None:
+                        scores.append((i+1, info["score"]))  # Store (image_index, score)
+                    else:
+                        error_msg = f"Missing score for image {i+1} in {category} ({round_name})"
+                        print(f"{error_msg}")
+                        if debug_info is not None:
+                            round_info["status"] = "failed"
+                            round_info["error"] = error_msg
+                        return None
+                
+                # Sort by score to get ranking (descending)
+                scores.sort(key=lambda x: x[1], reverse=True)
+                ranked_images = [idx for idx, _ in scores]
+                raw_scores = [score for _, score in scores]
+                
+                # Update round info in debug log
+                if debug_info is not None:
+                    round_info["status"] = "success"
+                    round_info["model_scores"] = raw_scores
+                    round_info["ranked_images"] = ranked_images
+                    round_info["ranking_explanation"] = ranking
+                    round_info["full_response"] = generated_text
+                    
+                    # Identify the winner (1-indexed in this comparison)
+                    round_info["winner"] = ranked_images[0]
+                    
+                return {
+                    "extracted_info": extracted_info,
+                    "ranking": ranking,
+                    "ranked_images": ranked_images,
+                    "scores": raw_scores,
+                    "full_response": generated_text
+                }
+                
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    print(f"Attempt {attempt+1} failed: {e}. Retrying in {retry_delay} seconds...")
+                    time.sleep(retry_delay)
+                    retry_delay *= 2  # Exponential backoff
+                else:
+                    error_msg = f"Error in get_model_ranking for {category} ({round_name}): {str(e)}"
+                    print(error_msg)
+                    if debug_info is not None:
+                        round_info["status"] = "failed"
+                        round_info["error"] = error_msg
+                    return None
+    
+    except Exception as e:
+        error_msg = f"Error in get_model_ranking for {category} ({round_name}): {str(e)}"
+        print(error_msg)
+        if debug_info is not None:
+            round_info["status"] = "failed"
+            round_info["error"] = error_msg
+        return None
+
+def conduct_tournament(client, images, category, group, debug_info):
+    """Conduct a tournament between images with comprehensive debugging."""
+    num_images = len(images)
+    debug_info["images"] = [os.path.basename(img) for img in images]
+    debug_info["tournament_structure"] = f"{num_images}-image tournament"
+    debug_info["rounds"] = []
+    
+    # Record the original indices for tracking
+    original_indices = list(range(num_images))
+    
+    # If only 2 images, direct comparison
+    if num_images == 2:
+        debug_info["tournament_type"] = "direct_comparison"
+        result = get_model_ranking(client, images, category, 
+                                  f"{group}_direct_comparison", debug_info)
+        if not result:
+            debug_info["status"] = "failed"
+            debug_info["error"] = "Direct comparison failed"
+            return None, [], original_indices
+        
+        debug_info["status"] = "success"
+        # The finalists are the original images (0 and 1)
+        return result, [], original_indices
+    
+    # For 3 or 4 images, use tournament structure
+    elif num_images == 3:
+        debug_info["tournament_type"] = "three_image_tournament"
+        tournament_structure = []
+        
+        # First round: Compare images 0 and 1
+        first_round = get_model_ranking(client, images[:2], category, 
+                                       f"{group}_round1_pair01", debug_info)
+        if not first_round:
+            debug_info["status"] = "failed"
+            debug_info["error"] = "First round comparison failed"
+            return None, [], original_indices
+        
+        # Get the winner of the first round (0-indexed in the original list)
+        winner_idx = first_round["ranked_images"][0] - 1  # Adjust for 0-indexing
+        tournament_structure.append((0, 1, winner_idx))
+        
+        # For debug: which original image won the first round
+        debug_info["first_round_winner"] = {
+            "original_index": winner_idx,
+            "filename": os.path.basename(images[winner_idx])
+        }
+        
+        # Create finalist images list for the final round
+        finalist_images = [images[winner_idx], images[2]]
+        finalist_indices = [winner_idx, 2]  # Original indices
+        
+        # Final round: Compare winner with image 2
+        final_round = get_model_ranking(client, finalist_images, category, 
+                                       f"{group}_final_round", debug_info)
+        if not final_round:
+            debug_info["status"] = "failed"
+            debug_info["error"] = "Final round comparison failed"
+            return None, tournament_structure, original_indices
+            
+        # For debug: final winner
+        final_winner_local_idx = final_round["ranked_images"][0] - 1  # 0 or 1 in this pair
+        final_winner_original_idx = finalist_indices[final_winner_local_idx]  # Map back to original index
+        
+        debug_info["final_winner"] = {
+            "local_index": final_winner_local_idx,
+            "original_index": final_winner_original_idx,
+            "filename": os.path.basename(images[final_winner_original_idx])
+        }
+        
+        debug_info["status"] = "success"
+        return final_round, tournament_structure, finalist_indices
+    
+    elif num_images == 4:
+        debug_info["tournament_type"] = "four_image_tournament"
+        tournament_structure = []
+        
+        # First semifinal: Compare images 0 and 1
+        semi1 = get_model_ranking(client, images[:2], category, 
+                                  f"{group}_semifinal1_pair01", debug_info)
+        if not semi1:
+            debug_info["status"] = "failed"
+            debug_info["error"] = "First semifinal failed"
+            return None, [], original_indices
+        
+        # Get the winner of the first semifinal (0-indexed in the original list)
+        winner1_idx = semi1["ranked_images"][0] - 1  # Adjust for 0-indexing
+        tournament_structure.append((0, 1, winner1_idx))
+        
+        # For debug: which original image won the first semifinal
+        debug_info["semifinal1_winner"] = {
+            "original_index": winner1_idx,
+            "filename": os.path.basename(images[winner1_idx])
+        }
+        
+        # Second semifinal: Compare images 2 and 3
+        semi2 = get_model_ranking(client, images[2:], category, 
+                                 f"{group}_semifinal2_pair23", debug_info)
+        if not semi2:
+            debug_info["status"] = "failed"
+            debug_info["error"] = "Second semifinal failed"
+            return None, tournament_structure, original_indices
+        
+        # Get the winner of the second semifinal
+        # The indices in semi2["ranked_images"] are 1-indexed, referring to indices in the slice [2:]
+        # So we need to adjust by adding 2 to get the original indices
+        winner2_idx_local = semi2["ranked_images"][0] - 1  # 0 or 1 in this pair (0-indexed)
+        winner2_idx = winner2_idx_local + 2  # Map back to original index
+        tournament_structure.append((2, 3, winner2_idx))
+        
+        # For debug: which original image won the second semifinal
+        debug_info["semifinal2_winner"] = {
+            "local_index": winner2_idx_local,
+            "original_index": winner2_idx,
+            "filename": os.path.basename(images[winner2_idx])
+        }
+        
+        # Create finalist images list for the final round
+        finalist_images = [images[winner1_idx], images[winner2_idx]]
+        finalist_indices = [winner1_idx, winner2_idx]  # Original indices
+        
+        # Final: Compare winners
+        final_round = get_model_ranking(client, finalist_images, category, 
+                                       f"{group}_final_round", debug_info)
+        if not final_round:
+            debug_info["status"] = "failed"
+            debug_info["error"] = "Final round failed"
+            return None, tournament_structure, finalist_indices
+        
+        # For debug: final winner
+        final_winner_local_idx = final_round["ranked_images"][0] - 1  # 0 or 1 in this pair
+        final_winner_original_idx = finalist_indices[final_winner_local_idx]  # Map back to original index
+        
+        debug_info["final_winner"] = {
+            "local_index": final_winner_local_idx,
+            "original_index": final_winner_original_idx,
+            "filename": os.path.basename(images[final_winner_original_idx])
+        }
+        
+        debug_info["finalist_indices"] = finalist_indices
+        debug_info["finalist_filenames"] = [os.path.basename(images[idx]) for idx in finalist_indices]
+        debug_info["status"] = "success"
+        return final_round, tournament_structure, finalist_indices
+    
+    else:
+        debug_info["status"] = "failed"
+        debug_info["error"] = f"Unsupported number of images: {num_images}"
+        print(f"Unsupported number of images: {num_images}")
+        return None, [], original_indices
+
+def load_dataset():
+    """Load the dataset and prepare it for evaluation."""
+    data = []
+    MAX_IMAGES = 4  # Consistent with training script
+
+    print("Loading dataset...")
+    for category in os.listdir(dataset_image):
+        category_path = os.path.join(dataset_image, category)
+        if os.path.isdir(category_path):
+            for group in os.listdir(category_path):
+                group_path = os.path.join(dataset_image, category, group)
+                if os.path.isdir(group_path):
+                    images = sorted([
+                        os.path.join(group_path, img)
+                        for img in os.listdir(group_path)
+                        if img.lower().endswith((".png", ".jpg", ".jpeg", ".webp"))
+                    ])
+                    
+                    if len(images) > MAX_IMAGES or len(images) == 0:
+                        continue
+                        
+                    response_path = os.path.join(dataset_response, category, group, "user_output.txt")
+                    if os.path.exists(response_path):
+                        try:
+                            extracted_info, ranking = extract_text_data(response_path)
+                            if extracted_info:
+                                # Also store image filenames for debug output
+                                image_filenames = [os.path.basename(img) for img in images]
+                                
+                                data.append({
+                                    "images": images,
+                                    "image_filenames": image_filenames,
+                                    "extracted_info": extracted_info,
+                                    "ranking": ranking,
+                                    "category": category,
+                                    "group": group
+                                })
+                        except Exception as e:
+                            print(f"Error processing {category}/{group}: {str(e)}")
+                            continue
+
+    print(f"Dataset loaded with {len(data)} groups")
+    return data
+
+def evaluate_tournament_with_detailed_logging(data):
+    """Evaluate model using tournament approach with comprehensive debugging."""
+    
+    # Split dataset into train/val sets - using only 5% for validation
+    train_data, test_data = train_test_split(data, test_size=0.05, random_state=42)
+    print(f"Evaluation dataset: {len(test_data)} groups out of {len(data)} total groups")
+    
+    # Summary statistics
+    stats = {
+        "total": len(test_data),
+        "success": 0,
+        "failure": 0,
+        "metrics": {
+            "rank_accuracy": [],
+            "mse": [],
+            "ranking_loss": []
+        }
+    }
+    
+    # Process each group in the evaluation set
+    for batch in tqdm(test_data, desc="Processing evaluation groups"):
+        category = batch["category"]
+        group = batch["group"]
+        images = batch["images"]
+        image_filenames = batch["image_filenames"]
+        
+        # Create directory for this category/group
+        group_dir = os.path.join(metrics_output_dir, category, group)
+        os.makedirs(group_dir, exist_ok=True)
+        
+        # Output file paths
+        metrics_file = os.path.join(group_dir, "output_pixtral_zeroshot.txt")
+        debug_file = os.path.join(debug_output_dir, f"{category}_{group}_detailed.json")
+        debug_summary_file = os.path.join(debug_output_dir, f"{category}_{group}_summary.txt")
+        
+        # Initialize debug info dictionary
+        debug_info = {
+            "category": category,
+            "group": group,
+            "image_filenames": image_filenames,
+            "timestamp": str(np.datetime64('now')),
+            "model": "pixtral_zeroshot"
+        }
+        
+        try:
+            # Get ground truth info
+            ground_truth_info = batch["extracted_info"]
+            
+            # Skip if no valid ground truth
+            if not ground_truth_info or not isinstance(ground_truth_info, list):
+                with open(metrics_file, "w", encoding="utf-8") as f:
+                    f.write("ERROR: Invalid ground truth data")
+                debug_info["status"] = "failed"
+                debug_info["error"] = "Invalid ground truth data"
+                
+                # Save debug info
+                with open(debug_file, "w", encoding="utf-8") as f:
+                    json.dump(debug_info, f, indent=2)
+                
+                stats["failure"] += 1
+                continue
+            
+            # Get ground truth scores
+            ground_truth_sorted = sorted(ground_truth_info, key=lambda x: x["image_num"])
+            ground_truth_scores = [item.get("score", 0) for item in ground_truth_sorted]
+            
+            if not all(score is not None for score in ground_truth_scores):
+                with open(metrics_file, "w", encoding="utf-8") as f:
+                    f.write("ERROR: Missing scores in ground truth data")
+                debug_info["status"] = "failed"
+                debug_info["error"] = "Missing scores in ground truth data"
+                
+                # Save debug info
+                with open(debug_file, "w", encoding="utf-8") as f:
+                    json.dump(debug_info, f, indent=2)
+                
+                stats["failure"] += 1
+                continue
+            
+            # Record ground truth info in debug_info
+            debug_info["ground_truth"] = {
+                "scores": ground_truth_scores,
+                "top_image_idx": int(np.argmax(ground_truth_scores)),  # 0-indexed
+                "top_image_filename": image_filenames[int(np.argmax(ground_truth_scores))]
+            }
+            
+            # Run the tournament for this group
+            final_match, tournament_brackets, finalist_indices = conduct_tournament(
+                client, images, category, group, debug_info
+            )
+            
+            if not final_match:
+                with open(metrics_file, "w", encoding="utf-8") as f:
+                    f.write("ERROR: Tournament failed to complete")
+                
+                # Save debug info
+                with open(debug_file, "w", encoding="utf-8") as f:
+                    json.dump(debug_info, f, indent=2)
+                
+                stats["failure"] += 1
+                continue
+            
+            # Get the model's ranking of the final two images
+            model_ranking = final_match["ranked_images"]
+            
+            # Map the model's ranking (1-indexed) back to the original image indices
+            if len(model_ranking) > 0:
+                model_top_index = model_ranking[0] - 1  # Convert to 0-indexed within finalists
+                if model_top_index < len(finalist_indices):
+                    model_top_image = finalist_indices[model_top_index]  # Original 0-indexed position
+                else:
+                    debug_info["status"] = "failed"
+                    debug_info["error"] = f"Invalid model top index: {model_top_index}, finalist_indices: {finalist_indices}"
+                    continue
+            else:
+                debug_info["status"] = "failed"
+                debug_info["error"] = "No ranked images in final match"
+                continue
+            
+            # Get ground truth top image (0-indexed)
+            ground_truth_top_image = np.argmax(ground_truth_scores)
+            
+            debug_info["model_prediction"] = {
+                "top_image_idx": int(model_top_image),  # 0-indexed
+                "top_image_filename": image_filenames[int(model_top_image)]
+            }
+            
+            # Calculate rank match (does the model's top pick match ground truth's top pick?)
+            rank_accuracy = 1.0 if model_top_image == ground_truth_top_image else 0.0
+            
+            # Calculate MSE for the finalist scores
+            # Get the predicted scores for the two finalist images
+            # predicted_scores_finalists = final_match["scores"]
+            predicted_scores_finalists = [
+                float(final_match["extracted_info"][i]["score"]) 
+                for i in range(len(final_match["extracted_info"]))
+                if "score" in final_match["extracted_info"][i] and final_match["extracted_info"][i]["score"] is not None
+            ]
+            # Get the ground truth scores for the two finalist images
+            ground_truth_scores_finalists = [ground_truth_scores[idx] for idx in finalist_indices]
+            
+            debug_info["finalist_metrics"] = {
+                "finalist_original_indices": [int(idx) for idx in finalist_indices],
+                "finalist_filenames": [image_filenames[idx] for idx in finalist_indices],
+                "model_scores": predicted_scores_finalists,
+                "ground_truth_scores": ground_truth_scores_finalists
+            }
+            
+            # Calculate MSE
+            if len(predicted_scores_finalists) == len(ground_truth_scores_finalists):
+                mse = float(np.mean((np.array(predicted_scores_finalists) - np.array(ground_truth_scores_finalists)) ** 2))
+            else:
+                with open(metrics_file, "w", encoding="utf-8") as f:
+                    f.write("ERROR: Finalist score count mismatch")
+                debug_info["status"] = "failed"
+                debug_info["error"] = "Finalist score count mismatch"
+                continue
+            
+            # For ranking loss, use rank correlation measures
+            # Get the ground truth ranking of the finalists
+            gt_scores_finalists = [ground_truth_scores[idx] for idx in finalist_indices]
+            gt_ranking_finalists = np.argsort(np.argsort(-np.array(gt_scores_finalists)))
+            
+            # Get the model's ranking of the finalists
+            model_ranking_finalists = np.argsort(np.argsort(-np.array(predicted_scores_finalists)))
+            
+            # Calculate normalized ranking loss for finalists
+            if len(gt_ranking_finalists) == len(model_ranking_finalists):
+                ranking_loss = float(np.linalg.norm(gt_ranking_finalists - model_ranking_finalists) / len(gt_ranking_finalists))
+            else:
+                with open(metrics_file, "w", encoding="utf-8") as f:
+                    f.write("ERROR: Finalist ranking length mismatch")
+                debug_info["status"] = "failed"
+                debug_info["error"] = "Finalist ranking length mismatch"
+                continue
+            
+            # Record metrics in debug_info
+            debug_info["metrics"] = {
+                "rank_accuracy": float(rank_accuracy),
+                "mse": float(mse),
+                "ranking_loss": float(ranking_loss)
+            }
+            
+            # Save metrics to the output file
+            with open(metrics_file, "w", encoding="utf-8") as f:
+                f.write(f"rank_accuracy: {rank_accuracy:.4f}\n")
+                f.write(f"mse: {mse:.4f}\n")
+                f.write(f"ranking_loss: {ranking_loss:.4f}\n")
+            
+            # Save full debug info as JSON
+            with open(debug_file, "w", encoding="utf-8") as f:
+                json.dump(debug_info, f, indent=2)
+            
+            # Write human-readable summary
+            with open(debug_summary_file, "w", encoding="utf-8") as f:
+                f.write(f"TOURNAMENT SUMMARY FOR {category}/{group}\n")
+                f.write("=" * 60 + "\n\n")
+                
+                f.write(f"Category: {category}\n")
+                f.write(f"Group: {group}\n")
+                f.write(f"Number of images: {len(images)}\n")
+                f.write(f"Image filenames: {', '.join(image_filenames)}\n\n")
+                
+                f.write("GROUND TRUTH\n")
+                f.write("-" * 40 + "\n")
+                for i, (filename, score) in enumerate(zip(image_filenames, ground_truth_scores)):
+                    f.write(f"Image {i}: {filename} - Score: {score}\n")
+                f.write(f"\nGround truth top image: Image {ground_truth_top_image} ({image_filenames[ground_truth_top_image]})\n\n")
+                
+                f.write("TOURNAMENT DETAILS\n")
+                f.write("-" * 40 + "\n")
+                f.write(f"Tournament type: {debug_info['tournament_type']}\n\n")
+                
+                if len(images) == 2:
+                    f.write("Direct comparison of 2 images\n")
+                    if "rounds" in debug_info and len(debug_info["rounds"]) > 0:
+                        round_info = debug_info["rounds"][0]
+                        f.write(f"Scores: {round_info.get('model_scores', [])}\n")
+                        winner_idx = round_info.get('winner', 1) - 1  # Convert to 0-indexed
+                        if winner_idx >= 0 and winner_idx < len(image_filenames):
+                            f.write(f"Winner: Image {winner_idx} ({image_filenames[winner_idx]})\n\n")
+                
+                elif len(images) == 3:
+                    f.write("3-image tournament:\n")
+                    f.write("First round: Images 0 vs 1\n")
+                    if "first_round_winner" in debug_info:
+                        winner_idx = debug_info["first_round_winner"]["original_index"]
+                        f.write(f"First round winner: Image {winner_idx} ({image_filenames[winner_idx]})\n")
+                    
+                    f.write("\nFinal round: First round winner vs Image 2\n")
+                    if "final_winner" in debug_info:
+                        winner_idx = debug_info["final_winner"]["original_index"]
+                        f.write(f"Final winner: Image {winner_idx} ({image_filenames[winner_idx]})\n\n")
+                
+                elif len(images) == 4:
+                    f.write("4-image tournament:\n")
+                    f.write("First semifinal: Images 0 vs 1\n")
+                    if "semifinal1_winner" in debug_info:
+                        winner_idx = debug_info["semifinal1_winner"]["original_index"]
+                        f.write(f"First semifinal winner: Image {winner_idx} ({image_filenames[winner_idx]})\n")
+                    
+                    f.write("\nSecond semifinal: Images 2 vs 3\n")
+                    if "semifinal2_winner" in debug_info:
+                        winner_idx = debug_info["semifinal2_winner"]["original_index"]
+                        f.write(f"Second semifinal winner: Image {winner_idx} ({image_filenames[winner_idx]})\n")
+                    
+                    f.write("\nFinal round: First semifinal winner vs Second semifinal winner\n")
+                    if "final_winner" in debug_info:
+                        winner_idx = debug_info["final_winner"]["original_index"]
+                        f.write(f"Final winner: Image {winner_idx} ({image_filenames[winner_idx]})\n\n")
+                
+                f.write("FINALISTS\n")
+                f.write("-" * 40 + "\n")
+                for i, idx in enumerate(finalist_indices):
+                    f.write(f"Finalist {i+1}: Image {idx} ({image_filenames[idx]})\n")
+                f.write(f"\nGround truth scores for finalists: {ground_truth_scores_finalists}\n")
+                f.write(f"Model scores for finalists: {predicted_scores_finalists}\n\n")
+                
+                f.write("METRICS\n")
+                f.write("-" * 40 + "\n")
+                f.write(f"Rank Accuracy: {rank_accuracy:.4f}\n")
+                if rank_accuracy == 1.0:
+                    f.write("  ✓ Model's top pick matches ground truth's top pick\n")
+                else:
+                    f.write(f"  ✗ Model's top pick (Image {model_top_image}) doesn't match ground truth's top pick (Image {ground_truth_top_image})\n")
+                
+                f.write(f"MSE: {mse:.4f}\n")
+                f.write(f"Ranking Loss: {ranking_loss:.4f}\n")
+            
+            # Update stats
+            stats["success"] += 1
+            stats["metrics"]["rank_accuracy"].append(rank_accuracy)
+            stats["metrics"]["mse"].append(mse)
+            stats["metrics"]["ranking_loss"].append(ranking_loss)
+            
+            # Allow time between API calls to avoid rate limits
+            time.sleep(1)
+            
+        except Exception as e:
+            print(f"Error processing {category}/{group}: {str(e)}")
+            with open(metrics_file, "w", encoding="utf-8") as f:
+                f.write(f"ERROR: {str(e)}")
+            
+            debug_info["status"] = "failed"
+            debug_info["error"] = str(e)
+            
+            # Save debug info
+            with open(debug_file, "w", encoding="utf-8") as f:
+                json.dump(debug_info, f, indent=2)
+            
+            stats["failure"] += 1
+            continue
+    
+    # Calculate average metrics
+    if stats["success"] > 0:
+        avg_rank_accuracy = np.mean(stats["metrics"]["rank_accuracy"])
+        avg_mse = np.mean(stats["metrics"]["mse"])
+        avg_ranking_loss = np.mean(stats["metrics"]["ranking_loss"])
+    
+        # Write summary file
+        summary_file = os.path.join(debug_output_dir, "pixtral_zeroshot_summary.txt")
+        with open(summary_file, "w", encoding="utf-8") as f:
+            f.write("PIXTRAL ZERO-SHOT TOURNAMENT EVALUATION SUMMARY\n")
+            f.write("=" * 60 + "\n\n")
+            f.write(f"Total groups in evaluation set: {stats['total']}\n")
+            f.write(f"Successful evaluations: {stats['success']} ({stats['success']/stats['total']*100:.2f}%)\n")
+            f.write(f"Failed evaluations: {stats['failure']} ({stats['failure']/stats['total']*100:.2f}%)\n\n")
+            
+            f.write("Average Metrics:\n")
+            f.write(f"Rank Accuracy: {avg_rank_accuracy:.4f}\n")
+            f.write(f"Mean Squared Error: {avg_mse:.4f}\n")
+            f.write(f"Ranking Loss: {avg_ranking_loss:.4f}\n\n")
+            
+            f.write("Explanation of Metrics:\n")
+            f.write("- Rank Accuracy: Measures if the model's top pick matches ground truth's top pick\n")
+            f.write("- MSE: Mean Squared Error between model's scores and ground truth scores for finalist images\n")
+            f.write("- Ranking Loss: Normalized difference between model's ranking and ground truth ranking of finalist images\n")
+            
+        # Save all stats as JSON for further analysis
+        complete_stats_file = os.path.join(debug_output_dir, "complete_stats.json")
+        with open(complete_stats_file, "w", encoding="utf-8") as f:
+            json.dump({
+                "summary": {
+                    "total": int(stats["total"]),
+                    "success": int(stats["success"]),
+                    "failure": int(stats["failure"]),
+                    "avg_rank_accuracy": float(avg_rank_accuracy),
+                    "avg_mse": float(avg_mse),
+                    "avg_ranking_loss": float(avg_ranking_loss)
+                },
+                "metrics": {
+                    "rank_accuracy": [float(x) for x in stats["metrics"]["rank_accuracy"]],
+                    "mse": [float(x) for x in stats["metrics"]["mse"]],
+                    "ranking_loss": [float(x) for x in stats["metrics"]["ranking_loss"]]
+                }
+            }, f, indent=2)
+        
+        print(f"\nEvaluation complete.")
+        print(f"Metrics saved to: {metrics_output_dir}")
+        print(f"Detailed debug logs saved to: {debug_output_dir}")
+        print(f"Summary file: {summary_file}")
+        print(f"Complete stats: {complete_stats_file}")
+        
+        print(f"\nOverall metrics (successful evaluations: {stats['success']}):")
+        print(f"Rank Accuracy: {avg_rank_accuracy:.4f}")
+        print(f"Mean Squared Error: {avg_mse:.4f}")
+        print(f"Ranking Loss: {avg_ranking_loss:.4f}")
+    else:
+        print("No successful evaluations.")
+
+if __name__ == "__main__":
+    eval_data = load_dataset()  # This now returns only the validation set (5%)
+    evaluate_tournament_with_detailed_logging(eval_data)

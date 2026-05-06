@@ -1,0 +1,156 @@
+{
+  "total_samples": 78,
+  "valid_samples": 73,
+  "avg_agreement": {
+    "finetuned_vs_ground_truth": 0.7751141552511415,
+    "model_vs_ground_truth": {
+      "qwen_zeroshot": 0.7421875,
+      "qwen_fewshot": 0.7540983606557377,
+      "pixtral_zeroshot": 0.7814009661835748,
+      "pixtral_fewshot": 0.786231884057971
+    }
+  },
+  "avg_mse": {
+    "finetuned_vs_ground_truth": 4395.024654510358,
+    "model_vs_ground_truth": {
+      "qwen_zeroshot": 424.82682291666663,
+      "qwen_fewshot": 194.896174863388,
+      "pixtral_zeroshot": 290.30797101449275,
+      "pixtral_fewshot": 248.94685990338164
+    }
+  },
+  "avg_norm_ranking_loss": {
+    "finetuned_vs_ground_truth": 0.16888078613785368,
+    "model_vs_ground_truth": {
+      "qwen_zeroshot": 0.18856230686305223,
+      "qwen_fewshot": 0.18816554678585867,
+      "pixtral_zeroshot": 0.17129129256285708,
+      "pixtral_fewshot": 0.15926694078195455
+    }
+  },
+  "avg_top_accuracy": {
+    "finetuned_vs_ground_truth": 0.7945205479452054,
+    "model_vs_ground_truth": {
+      "qwen_zeroshot": 0.75,
+      "qwen_fewshot": 0.7704918032786885,
+      "pixtral_zeroshot": 0.8115942028985508,
+      "pixtral_fewshot": 0.8115942028985508
+    }
+  },
+  "avg_kendall_tau": {
+    "finetuned_vs_ground_truth": 0.6712328767123288,
+    "model_vs_ground_truth": {
+      "qwen_zeroshot": 0.5626057282766979,
+      "qwen_fewshot": 0.5379753537857004,
+      "pixtral_zeroshot": 0.6065107369927787,
+      "pixtral_fewshot": 0.61694254483665
+    }
+  },
+  "avg_spearman_rho": {
+    "finetuned_vs_ground_truth": 0.6848574074611103,
+    "model_vs_ground_truth": {
+      "qwen_zeroshot": 0.5782288668251618,
+      "qwen_fewshot": 0.5387873017013841,
+      "pixtral_zeroshot": 0.6102233225411441,
+      "pixtral_fewshot": 0.6196840418803936
+    }
+  },
+  "category_metrics": {
+    "toaster": {
+      "agreement": 1.0,
+      "mse": 4451.710833740234,
+      "norm_ranking_loss": 0.0,
+      "top_accuracy": 1.0,
+      "kendall_tau": 1.0,
+      "spearman_rho": 0.9999999999999998
+    },
+    "handbag": {
+      "agreement": 0.875,
+      "mse": 4859.456913948059,
+      "norm_ranking_loss": 0.08838834764831845,
+      "top_accuracy": 0.75,
+      "kendall_tau": 0.9166666666666667,
+      "spearman_rho": 0.95
+    },
+    "refrigerator": {
+      "agreement": 0.6296296296296295,
+      "mse": 5178.1432856807005,
+      "norm_ranking_loss": 0.2618914004394621,
+      "top_accuracy": 0.7777777777777778,
+      "kendall_tau": 0.40740740740740744,
+      "spearman_rho": 0.4444444444444444
+    },
+    "microwave": {
+      "agreement": 0.625,
+      "mse": 5184.34118938446,
+      "norm_ranking_loss": 0.26516504294495535,
+      "top_accuracy": 0.75,
+      "kendall_tau": 0.41666666666666674,
+      "spearman_rho": 0.44999999999999996
+    },
+    "suitcase": {
+      "agreement": 0.6,
+      "mse": 3432.4278055826826,
+      "norm_ranking_loss": 0.29558688173877473,
+      "top_accuracy": 0.6,
+      "kendall_tau": 0.5698481705003444,
+      "spearman_rho": 0.5421637021355783
+    },
+    "tv": {
+      "agreement": 0.8333333333333334,
+      "mse": 3228.3923747804424,
+      "norm_ranking_loss": 0.13176156917368248,
+      "top_accuracy": 0.8333333333333334,
+      "kendall_tau": 0.8333333333333334,
+      "spearman_rho": 0.8333333333333331
+    },
+    "remote": {
+      "agreement": 0.75,
+      "mse": 5520.538849830627,
+      "norm_ranking_loss": 0.1767766952966369,
+      "top_accuracy": 0.75,
+      "kendall_tau": 0.5,
+      "spearman_rho": 0.5
+    },
+    "couch": {
+      "agreement": 0.9333333333333332,
+      "mse": 3882.225280253093,
+      "norm_ranking_loss": 0.047140452079103175,
+      "top_accuracy": 0.9,
+      "kendall_tau": 0.9333333333333333,
+      "spearman_rho": 0.95
+    },
+    "backpack": {
+      "agreement": 0.9047619047619048,
+      "mse": 4960.828819274902,
+      "norm_ranking_loss": 0.10647942749998998,
+      "top_accuracy": 1.0,
+      "kendall_tau": 0.8571428571428571,
+      "spearman_rho": 0.8571428571428571
+    },
+    "chair": {
+      "agreement": 0.5972222222222222,
+      "mse": 3919.301078266568,
+      "norm_ranking_loss": 0.3346112499277382,
+      "top_accuracy": 0.5,
+      "kendall_tau": 0.35845985791637963,
+      "spearman_rho": 0.36396203899719365
+    },
+    "cell phone": {
+      "agreement": 0.7222222222222222,
+      "mse": 3269.4864790174693,
+      "norm_ranking_loss": 0.19641855032959654,
+      "top_accuracy": 0.8333333333333334,
+      "kendall_tau": 0.5555555555555556,
+      "spearman_rho": 0.5833333333333334
+    },
+    "laptop": {
+      "agreement": 0.7777777777777777,
+      "mse": 4807.393223232692,
+      "norm_ranking_loss": 0.15713484026367724,
+      "top_accuracy": 0.6666666666666666,
+      "kendall_tau": 0.7777777777777778,
+      "spearman_rho": 0.8333333333333334
+    }
+  }
+}

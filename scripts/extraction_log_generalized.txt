@@ -1,0 +1,713 @@
+=== PRODUCT IMAGE EVALUATIONS (GENERALIZED) ===
+Extracted:
+
+SKIPPED: Category 'backpack', Group 'group_574527' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_e7d1702e' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000489453' - Too many images (12 > 4)
+SKIPPED: Category 'backpack', Group 'group_5fa3467f' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_7b9a835d' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_55690' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_21a6d93e' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_226176' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000315156' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_97a26942' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000104739' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_47386' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_e12d0f3c' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_4393d946' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_829022ab' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_563730' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_6fafe70f' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_0d2732b8' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000262371' - Too many images (9 > 4)
+SKIPPED: Category 'backpack', Group 'group_000000520389' - Too many images (5 > 4)
+SKIPPED: Category 'backpack', Group 'group_64015' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_340532' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000390474' - Too many images (7 > 4)
+SKIPPED: Category 'backpack', Group 'group_7cd19dd5' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_410108' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000507287' - Too many images (5 > 4)
+SKIPPED: Category 'backpack', Group 'group_000000384231' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_02808c27' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_469570' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_ee97bd38' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_223410' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000472392' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_89c9b36b' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_fa714569' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_bf866cc6' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_126050' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_63fb9d45' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_fede15e0' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_489453' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_9c75d39f' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_461333' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_1496e3f0' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_d3575fad' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_b44e44a2' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_c6fa132f' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_84540' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_143453' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_237872' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_102987' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_3c041356' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_23935' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_c6c34002' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_378506' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_3250fb27' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_390310' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_233646' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_f2583298' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_149881' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_caf23ae7' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_236111' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_9a19f08f' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_b91a7895' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_24c698cd' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_4f662974' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000268570' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_aafde4c0' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_505745' - Too many images (5 > 4)
+SKIPPED: Category 'backpack', Group 'group_71044' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_e71dedbc' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000273607' - Too many images (12 > 4)
+SKIPPED: Category 'backpack', Group 'group_29833' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_319605' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_396932' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000316089' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_68bfc0b1' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_336286' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_83741' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_8b0e5d60' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_05208326' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_dd3657aa' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_59ed52e4' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_81447' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_000000118997' - Too many images (5 > 4)
+SKIPPED: Category 'backpack', Group 'group_370953' - Missing evaluation file
+SKIPPED: Category 'backpack', Group 'group_22129' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_238009' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_311891' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_438600' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_87493' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_474571' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_510861' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_239953' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_445671' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_410574' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_12827' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_191403' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_233543' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_393489' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_455073' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_183889' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_45435' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_81463' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_544698' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_282672' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_133627' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_509915' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_65982' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_553051' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_222305' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_31504' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_168739' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_181627' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_8f46decd' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_471755' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_181343' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_186585' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_372220' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_40821' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_234536' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_80b00a65' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_495599' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_166742' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_502361' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_117973' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_94723' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_562345' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_7503577f' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_000000334135' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_458748' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_273825' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_1b89157c' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_537027' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_219458' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_203879' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_29430' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_177572' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_535483' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_304295' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_158540' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_286171' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_476634' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_381828' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_55445' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_183970' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_341596' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_290522' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_540716' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_159828' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_575921' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_356403' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_204775' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_000000341411' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_359399' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_370315' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_158353' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_328115' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_125656' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_301605' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_486485' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_16737' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_236661' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_529447' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_306603' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_120333' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_914c18b0' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_528729' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_312240' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_279696' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_178715' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_411007' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_245266' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_177924' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_551086' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_28555' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_254096' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_515704' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_240706' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_516487' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_573714' - Missing evaluation file
+SKIPPED: Category 'cell phone', Group 'group_317495' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000320600' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_580286' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000553378' - Too many images (6 > 4)
+SKIPPED: Category 'handbag', Group 'group_000000293027' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_623093aa' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_125353' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000020632' - Too many images (17 > 4)
+SKIPPED: Category 'handbag', Group 'group_511676' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_50f47b14' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000470521' - Too many images (5 > 4)
+SKIPPED: Category 'handbag', Group 'group_000000214326' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_72d88599' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_eca34c67' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_cbadb2a1' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000014766' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_220d2433' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_6ae0bb76' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_999327dc' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000054399' - Too many images (5 > 4)
+SKIPPED: Category 'handbag', Group 'group_bf44102d' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_150235' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000339916' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_159729' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_231022' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_a40babc9' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_9befdf8d' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000110979' - Too many images (5 > 4)
+SKIPPED: Category 'handbag', Group 'group_000000442252' - Too many images (8 > 4)
+SKIPPED: Category 'handbag', Group 'group_352549' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_7d7436cc' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_750cbcfa' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_3e04823b' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000028273' - Too many images (8 > 4)
+SKIPPED: Category 'handbag', Group 'group_f2040929' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000552289' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_f7ad3ec3' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000102421' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_78aee99c' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000367917' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_5b069441' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000038438' - Too many images (7 > 4)
+SKIPPED: Category 'handbag', Group 'group_07ba3473' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_2b715b56' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_63123026' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_b962e110' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_4e7d5270' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_fb79a262' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000293837' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_115bc4f2' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_532998' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_000000130522' - Too many images (10 > 4)
+SKIPPED: Category 'handbag', Group 'group_228029' - Too many images (6 > 4)
+SKIPPED: Category 'handbag', Group 'group_8c243350' - Missing evaluation file
+SKIPPED: Category 'handbag', Group 'group_3a30d23f' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000453538' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_66192e70' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_2d0c9af7' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000492137' - Too many images (7 > 4)
+SKIPPED: Category 'laptop', Group 'group_129784' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_405174' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_420649' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_548912' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_80714' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_371414' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_c8496b97' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_50250a9d' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_27c9a09d' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_357470' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_23025' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_d5312b70' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_223283' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_f1b1f453' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000156156' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_796a2a1e' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_c15df802' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_03a13a09' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_8cb7db57' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_534972' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_43d79afb' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_88499' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_96728' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_117034' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_b6e2bd4a' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_17204d13' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_328327' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_252902' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_d8842bfc' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_da37190c' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_90a7af07' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_580953' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_238502' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_3229206a' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_c1409804' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_54252' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_db7cf365' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_c452ee00' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_160712' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000554737' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_581055' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_438099' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_425117' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_226211' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_1480c242' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_614d2fb5' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_77626ece' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_547b6ae0' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_4e2a6b73' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_0aebf887' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_153985' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_209380' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_339115' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_476170' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000224306' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_139503' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_f97e7dc0' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_222408' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_221378' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_d839b035' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000299103' - Too many images (5 > 4)
+SKIPPED: Category 'laptop', Group 'group_10c68bbf' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_264244' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_61a7c25f' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_6bb8645d' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_510456' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_555461' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_30afda78' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_0a267a72' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_408736' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_452272' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_239427' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000030062' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_29457' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_158582' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_24ec2e0c' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_130456' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000093469' - Too many images (7 > 4)
+SKIPPED: Category 'laptop', Group 'group_a2522ffd' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_553812' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_201655' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_60190' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_51083' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_434511' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_377183' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_000000067798' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_553126' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_441614' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_ce83c5b1' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_62623' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_e50fefc9' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_474446' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_6364' - Missing evaluation file
+SKIPPED: Category 'laptop', Group 'group_395761' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_6c9124f4' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_0512f4d4' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_cfb866be' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_3f63a8b1' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_533125' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_000000481710' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_580729' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_218844' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_7ccc329a' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_358209' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_ddb57e5f' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_000000288106' - Too many images (14 > 4)
+SKIPPED: Category 'microwave', Group 'group_c8a37889' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_454326' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_9b768359' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_316026' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_000000245096' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_516212' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_b7301238' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_199203' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_401393' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_000000580162' - Too many images (12 > 4)
+SKIPPED: Category 'microwave', Group 'group_8b6a9200' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_400045' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_239600' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_41551812' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_44928' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_216d2e99' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_364288' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_cc92b824' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_d8bfa8bc' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_ad205473' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_501175' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_95526' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_85452' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_223374' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_536999' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_8e5ea2ad' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_179322' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_8ea94996' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_306c8a82' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_461634' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_53485298' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_3f1e139d' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_31d8f957' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_f6cbd252' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_3e1ed869' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_c7770c74' - Missing evaluation file
+SKIPPED: Category 'microwave', Group 'group_000000335844' - Too many images (6 > 4)
+SKIPPED: Category 'microwave', Group 'group_317798' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000032513' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_b89ffa16' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_210642' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_d8bfa8bc' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_363457ab' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_110027' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000544386' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_302240' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_dd5c2e90' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_4837ae80' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_302716' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_579909' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_416237' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000477106' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000270179' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000347884' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_acd1f619' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_534001' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_73280' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_366733' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_115086' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_afbf8fb3' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_306305' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000397148' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_034cf44e' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_448761' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_357837' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000240967' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_22650' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_191016' - Too many images (6 > 4)
+SKIPPED: Category 'refrigerator', Group 'group_141376' - Too many images (5 > 4)
+SKIPPED: Category 'refrigerator', Group 'group_346605' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_256337' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_279450' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_169883' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_388188' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000144358' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_416841' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_48939' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_87126' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_496431' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_362371' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_562008' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_118234' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_252925' - No image files found
+SKIPPED: Category 'refrigerator', Group 'group_486018' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_124349' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_242955' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000160901' - Too many images (5 > 4)
+SKIPPED: Category 'refrigerator', Group 'group_477647' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_445433' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_163125' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_2414cfec' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_261558' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_246356' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_213113' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_316323' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000357837' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_163444' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_432686' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_c7770c74' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_446812' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_482514' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000121530' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_71e167e6' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_45663' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_425218' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_421406' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_186451' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_575834' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_229140' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_0bda6cf2' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_395379' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_187400' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_157866' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_343603' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_000000279078' - Too many images (6 > 4)
+SKIPPED: Category 'refrigerator', Group 'group_000000032674' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_248732' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_7f6deae5' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_384957' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_495980' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_165265' - Missing evaluation file
+SKIPPED: Category 'refrigerator', Group 'group_448351' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_1c46a609' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_7e2f1ef9' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_550421' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_4627d95a' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_7f8d384b' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_d7abbee3' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_435986' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_1f331d00' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_230548' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_380924' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_964dfed1' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000362853' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_e10594b2' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_15f398fa' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_350326' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_470770' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_235062' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000151975' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000468951' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_dd9023cc' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_326ce0ef' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_386035' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_21b5758c' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_361520' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_398367' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_160471' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_a18c3525' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_3c208886' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_266038' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_82a96aa2' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_4154c8ac' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_505745' - Too many images (5 > 4)
+SKIPPED: Category 'suitcase', Group 'group_97156' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000157931' - Too many images (7 > 4)
+SKIPPED: Category 'suitcase', Group 'group_000000121530' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000543719' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_571835' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000574000' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_af12436b' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_98a73f77' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_170689' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000323243' - Too many images (7 > 4)
+SKIPPED: Category 'suitcase', Group 'group_000000251608' - Too many images (6 > 4)
+SKIPPED: Category 'suitcase', Group 'group_312795' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_196192' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_3f7c7034' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_bd97c431' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_456638' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_248133' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000441674' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000319865' - Too many images (5 > 4)
+SKIPPED: Category 'suitcase', Group 'group_6e42463d' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000259819' - Too many images (6 > 4)
+SKIPPED: Category 'suitcase', Group 'group_142cf137' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000007730' - Too many images (6 > 4)
+SKIPPED: Category 'suitcase', Group 'group_159850' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000127381' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000118997' - Too many images (5 > 4)
+SKIPPED: Category 'suitcase', Group 'group_257099' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_346496' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_577051' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000107623' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_515123' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_218011' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_78134046' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000064423' - Too many images (5 > 4)
+SKIPPED: Category 'suitcase', Group 'group_000000389474' - Too many images (10 > 4)
+SKIPPED: Category 'suitcase', Group 'group_000000386321' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_1ff2914d' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_aa675f63' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_8c6eeb5d' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_c84d2e95' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000180296' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_387470' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_491845' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_548219' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_85131' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000395170' - Too many images (8 > 4)
+SKIPPED: Category 'suitcase', Group 'group_4885' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000491932' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_32629' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_d62d6e9b' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_4f740ba4' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_472102' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000391632' - Too many images (5 > 4)
+SKIPPED: Category 'suitcase', Group 'group_232227' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_73172' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_141508' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_395170' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000344460' - Too many images (9 > 4)
+SKIPPED: Category 'suitcase', Group 'group_80168' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_4df2a8f0' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_000000561393' - Missing evaluation file
+SKIPPED: Category 'suitcase', Group 'group_491932' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_b206023b' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_419449' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_975fdbdb' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_bdcc5571' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_6b9c4537' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_439827' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_519337' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_893b3445' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_23c70287' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_90c47da6' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_95dd0f78' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_cf675ffb' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_5c318292' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_481710' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_586cd350' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_eb21fff9' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_491154' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_00eed328' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_d8a1ae80' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_23444' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_db4d83d8' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_156175' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_a8717342' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_a0960b93' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_302806' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_147073' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_57d4990c' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_ca1efba1' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_e1e71d0f' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_dc5addf5' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_13e60c95' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_606edbde' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_000000174496' - Too many images (7 > 4)
+SKIPPED: Category 'toaster', Group 'group_cdc874da' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_ed8ef6f9' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_58e3a90d' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_000000259434' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_498f8de7' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_544371' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_000000017312' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_78289eb0' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_270922' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_353398' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_c99dc8f9' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_a1694d79' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_04af5537' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_dccc7db8' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_246409' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_fe10d215' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_96caab0d' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_0ab4803d' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_494383' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_62716' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_6865761c' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_759cecb4' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_241e9bfe' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_ae5c79b2' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_e9fd88ca' - Missing evaluation file
+SKIPPED: Category 'toaster', Group 'group_f976f36f' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_270270' - Too many images (5 > 4)
+SKIPPED: Category 'tv', Group 'group_64834' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_153154' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_151609' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000409985' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000580971' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_568112' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_213214' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_124824' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_123842' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_159808' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_856150c6' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000221223' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_349573' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_e8a48e2e' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_577030' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000433423' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_74458' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000460482' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_43893' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_558616' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_119760' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_457342' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000283648' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000250474' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_398158' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_69943088' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_525223' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_232969' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_41155' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000483139' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_460251' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_365452' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_395555' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_380957' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_422343' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_249968' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_128695' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_571702' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_36904' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_8cd2a1de' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000387000' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_76762' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_266250' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_96539' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_22451' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_62652' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_269392' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_466277' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_566583' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_336075' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_107735' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_309580' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_377012' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_214252' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_503249' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_223833' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_501814' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_416656' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_399122' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_153620' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_48711' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_131215' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000483775' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_325064' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_503920' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_447724' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_393068' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_565761' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_233242' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_502300' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_172852' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_533942' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_449888' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_168317' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_545285' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000479528' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000182339' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_507459' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_257669' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_204690' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000460496' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000396039' - Too many images (5 > 4)
+SKIPPED: Category 'tv', Group 'group_000000073353' - Too many images (9 > 4)
+SKIPPED: Category 'tv', Group 'group_125069' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_249538' - Missing evaluation file
+SKIPPED: Category 'tv', Group 'group_000000150746' - Missing evaluation file
+
+=== SUMMARY ===
+Processed: 0 valid entries
+Skipped: 706 entries

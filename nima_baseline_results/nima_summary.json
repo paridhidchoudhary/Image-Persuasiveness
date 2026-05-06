@@ -1,0 +1,523 @@
+{
+  "nima": {
+    "top_accuracy": 0.4520547945205479,
+    "agreement": 0.4337899543378995,
+    "kendall_tau": -0.0490220323644483,
+    "spearman_rho": -0.042741341879094494,
+    "norm_ranking_loss": 0.4444888466542614,
+    "n": 73,
+    "per_sample": {
+      "toaster/group_ae5c79b2": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "handbag/group_f2040929": {
+        "kendall_tau": -0.18257418583505539,
+        "spearman_rho": -0.10540925533894598,
+        "agreement": 0.5,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.9013878188659973
+      },
+      "refrigerator/group_572754": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "microwave/group_414948": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "suitcase/group_000000018862": {
+        "kendall_tau": -0.912870929175277,
+        "spearman_rho": -0.9486832980505139,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.9682458365518543
+      },
+      "refrigerator/group_4837ae80": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "tv/group_533942": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "tv/group_303116": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "remote/group_187427": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "couch/group_144228": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "remote/group_432727": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 1.0,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "refrigerator/group_87126": {
+        "kendall_tau": 0.0,
+        "spearman_rho": 0.0,
+        "agreement": 0.5,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.5
+      },
+      "remote/group_242665": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "refrigerator/group_469779": {
+        "kendall_tau": 0.33333333333333337,
+        "spearman_rho": 0.5,
+        "agreement": 0.3333333333333333,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.47140452079103173
+      },
+      "backpack/group_231632": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -1.0,
+        "agreement": 0.3333333333333333,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.9428090415820635
+      },
+      "couch/group_441523": {
+        "kendall_tau": -0.33333333333333337,
+        "spearman_rho": -0.5,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.8164965809277259
+      },
+      "backpack/group_266866": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "refrigerator/group_d06c982b": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "chair/group_f188573c": {
+        "kendall_tau": 0.3333333333333334,
+        "spearman_rho": 0.6000000000000001,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.5
+      },
+      "refrigerator/group_139921": {
+        "kendall_tau": -0.33333333333333337,
+        "spearman_rho": -0.5,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.8164965809277259
+      },
+      "remote/group_457687": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "handbag/group_352549": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "tv/group_249538": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "backpack/group_9e71b06a": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "backpack/group_ee66a0ab": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "backpack/group_7bec740c": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "couch/group_130163": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "tv/group_249968": {
+        "kendall_tau": 0.33333333333333337,
+        "spearman_rho": 0.5,
+        "agreement": 0.3333333333333333,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.47140452079103173
+      },
+      "cell phone/group_544698": {
+        "kendall_tau": 0.33333333333333337,
+        "spearman_rho": 0.5,
+        "agreement": 0.3333333333333333,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.47140452079103173
+      },
+      "laptop/group_000000158582": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -1.0,
+        "agreement": 0.3333333333333333,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.9428090415820635
+      },
+      "couch/group_373476": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 1.0,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "handbag/group_4e7d5270": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "toaster/group_419449": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "remote/group_526933": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "remote/group_110951": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "couch/group_314188": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "cell phone/group_238009": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "laptop/group_da8b63ab": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "suitcase/group_56646": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "toaster/group_156175": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "remote/group_36488": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "backpack/group_829022ab": {
+        "kendall_tau": -0.816496580927726,
+        "spearman_rho": -0.8660254037844387,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 1.0
+      },
+      "couch/group_000000125652": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "microwave/group_28039142": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "tv/group_000000128166": {
+        "kendall_tau": -0.6666666666666669,
+        "spearman_rho": -0.7999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 1.0606601717798212
+      },
+      "couch/group_3d64d7f0": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "cell phone/group_229724": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "chair/group_211347": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "microwave/group_000000229787": {
+        "kendall_tau": 0.0,
+        "spearman_rho": 0.0,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7905694150420949
+      },
+      "remote/group_33753": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "couch/group_257723": {
+        "kendall_tau": -0.33333333333333337,
+        "spearman_rho": -0.5,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.8164965809277259
+      },
+      "couch/group_70470": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "cell phone/group_188405": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "refrigerator/group_40338": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "laptop/group_344703": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "suitcase/group_374885": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "chair/group_bc968267": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "tv/group_502300": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "chair/group_53897": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -1.0,
+        "agreement": 0.3333333333333333,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.9428090415820635
+      },
+      "toaster/group_23444": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "refrigerator/group_45663": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "cell phone/group_252738": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "handbag/group_000000293027": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "chair/group_461098": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "chair/group_08374ad1": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "suitcase/group_000000461705": {
+        "kendall_tau": 0.33333333333333337,
+        "spearman_rho": 0.5,
+        "agreement": 0.3333333333333333,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.47140452079103173
+      },
+      "couch/group_58001": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "toaster/group_fb002f9f": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      },
+      "suitcase/group_485083": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "cell phone/group_476634": {
+        "kendall_tau": 0.33333333333333337,
+        "spearman_rho": 0.5,
+        "agreement": 0.3333333333333333,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.47140452079103173
+      },
+      "backpack/group_e71dedbc": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "microwave/group_532131": {
+        "kendall_tau": -1.0,
+        "spearman_rho": -0.9999999999999999,
+        "agreement": 0.0,
+        "top_accuracy": 0,
+        "norm_ranking_loss": 0.7071067811865476
+      },
+      "refrigerator/group_55521": {
+        "kendall_tau": 1.0,
+        "spearman_rho": 0.9999999999999999,
+        "agreement": 1.0,
+        "top_accuracy": 1,
+        "norm_ranking_loss": 0.0
+      }
+    }
+  }
+}
